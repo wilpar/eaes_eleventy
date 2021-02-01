@@ -1,0 +1,20 @@
+{
+  "name": "eaes_eleventy",
+  "version": "1.0.0",
+  "description": "2021 Base 11ty build EAES",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve & postcss src/css/style.css --o _tmp/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production postcss src/css/style.css --o _site/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "alpinejs": "^2.8.0",
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2"
+  }
+}
